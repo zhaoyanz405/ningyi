@@ -205,7 +205,7 @@ a, li, span, p {
 .hd_cont .dh_phone {
 	padding: 0 0 18px 180px;
 	margin-top: 40px;
-	background: url(../images/phone.png) no-repeat left center;
+	background: url(../images/footphone.png) no-repeat left center;
 	color: #5c5c5c;
 }
 .hd_cont .dh_phone dd {
@@ -475,7 +475,7 @@ a, li, span, p {
 	display: block;
 }
 .cplist li:hover h5 {
-	background: #FF4616;
+	background: #18a05e;
 }
 .cplist li h5 a {
 	color: #fff;
@@ -507,19 +507,19 @@ a, li, span, p {
 	text-decoration: none;
 }
 .famu li:hover a {
-	color: #FF4616;
+	color: #18a05e;
 }
 .faphone {
 	position: relative;
 	height: auto;
 	padding: 10px 0;
-	background: #FF4616;
+	background: #18a05e;
 }
 .faphone .wenzi {
 	text-align: center;
 	color: #fff;
 	line-height: 35px;
-	border-bottom: 1px dashed #FFC2B2;
+	border-bottom: 1px dashed #18a05e;
 	padding: 10px 0;
 	font-size: 16px;
 }
@@ -557,7 +557,7 @@ a, li, span, p {
 	box-shadow: #ccc 0px 0px 5px;
 }
 .faphone span.lx a {
-	color: #FF4616
+	color: #18a05e
 }
 .facont {
 	width: 1020px;
