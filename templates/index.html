@@ -75,6 +75,8 @@
 
 
 
+
+
 </script>
 <div class="clear"></div>
 
@@ -83,10 +85,32 @@
         <div class="famu fl">
             <h4><a href="javascript:;cp/"> <img src="../static/picture/famutit.png" width="210" height="56"/></a></h4>
             <ul>
+                <li><a href="javascript:;cp/a/" onclick="display_stb();">生态板系列</a>
+                    <script type="text/javascript">
+                    function display_stb() {
+                        var stb = document.getElementById('ul-stb');
+                        var jzmb = document.getElementById('ul-jzmb');
+                        stb.style.display="";
+                        jzmb.style.display="none";
 
-                <li><a href="javascript:;cp/a/">生态板系列</a></li>
+                    }
 
-                <li><a href="javascript:;cp/b/">建筑模板系列</a></li>
+
+                    </script>
+                </li>
+
+                <li><a href="javascript:;cp/b/"  onclick="display_jzmb();">建筑模板系列</a>
+                    <script type="text/javascript">
+                    function display_jzmb() {
+                        var stb = document.getElementById('ul-stb');
+                        var jzmb = document.getElementById('ul-jzmb');
+                        stb.style.display="none";
+                        jzmb.style.display="";
+                    }
+
+
+                    </script>
+                </li>
 
             </ul>
             <div class="faphone">
@@ -124,6 +148,25 @@
                                                                            src="../static/images/qianqianyurui.png"
                                                                            width="230" height="176"/></a>
                     <h5><a href="javascript:;" title="千千玉蕊"> 千千玉蕊</a></h5>
+                </li>
+            </ul>
+            <ul id="ul-jzmb" style="display:none">
+                <p>
+                    我公司生产的多层建筑模板采用优质木原材料与优质防水胶层层压制而成，外观覆盖酚醛树脂模，产品耐磨耐腐，可重复多次使用，表面光滑，可直接贴面装饰，减缩工期30%。主营有黑纸和花纸两类花色，尺寸有如下三种，可供客户自由选择。对于特殊规格，也可联系制作。</p>
+                <li class='nomr'><a href="javascript:;" title="1830*915*12mm"> <img alt="1830*915*12mm"
+                                                                                    src="../static/images/size-1830-915-12.png"
+                                                                                    width="230" height="176"/></a>
+                    <h5><a href="javascript:;" title="1830*915*12mm"> 1830*915*12mm</a></h5>
+                </li>
+                <li class='nomr'><a href="javascript:;" title="2135*915*15mm"> <img alt="2135*915*15mm"
+                                                                                    src="../static/images/size-2135-915-15.png"
+                                                                                    width="230" height="176"/></a>
+                    <h5><a href="javascript:;" title="2135*915*15mm"> 2135*915*15mm</a></h5>
+                </li>
+                <li class='nomr'><a href="javascript:;" title="2440*1220*18mm"> <img alt="2440*1220*18mm"
+                                                                                     src="../static/images/size-2440-1220-18.png"
+                                                                                     width="230" height="176"/></a>
+                    <h5><a href="javascript:;" title="2440*1220*18mm"> 2440*1220*18mm</a></h5>
                 </li>
             </ul>
         </div>
@@ -205,6 +248,8 @@
 			})
         });
 
+
+
                 </script>
                 <form enctype="multipart/form-data" method="post">
                     <input type="hidden" name="action" value="post"/>
@@ -245,6 +290,8 @@
                     document.getElementById("tijiaoshijian").value=str;
 
                     }
+
+
 
 
 
