@@ -6,9 +6,9 @@ from src.data import article_list
 app = Flask(__name__)
 
 
-@app.route('/',  methods=['GET', 'POST'])
-@app.route('/index')
-@app.route('/home')
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def home():
     return render_template('index.html')
 
@@ -21,9 +21,7 @@ def news():
 
 @app.route('/n-detail/<name>')
 def detail(name):
-    print(name)
     title_list = [art['title'] for art in article_list]
-    print(title_list)
     for art in article_list:
         wrong_art = {
             'title': "没有这篇文章"
@@ -32,6 +30,11 @@ def detail(name):
             return render_template('n-detail.html', article=art)
 
     return render_template('n-detail.html', article=wrong_art)
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == '__main__':
