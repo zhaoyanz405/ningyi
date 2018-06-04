@@ -205,7 +205,7 @@ a, li, span, p {
 .hd_cont .dh_phone {
 	padding: 0 0 18px 180px;
 	margin-top: 40px;
-	background: url(../images/footphone.png) no-repeat left center;
+	background: url(../images/phone.png) no-repeat left center;
 	color: #5c5c5c;
 }
 .hd_cont .dh_phone dd {
@@ -987,7 +987,7 @@ a, li, span, p {
 }
 .fwzc .fwphone {
 	position: relative;
-	height: 64px;
+	height: 140px;
 	background: url(../images/fwphone.png) no-repeat center;
 }
 .fwzc .fwphone span {
