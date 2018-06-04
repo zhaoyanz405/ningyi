@@ -30,21 +30,17 @@
     <div id="nav">
         <div id="navMenu">
             <ul>
-                <li><a href="index.html">网站首页</a></li>
+                <li class='home'><a href="index">网站首页</a></li>
 
-                <li><a href="about.html" rel='dropmenu'>关于我们</a></li>
+                <li><a href="#introduce" rel='dropmenu'>公司介绍</a></li>
 
-                <li><a href="product.html" rel='dropmenu'>产品展示</a></li>
+                <li><a href="#product" rel='dropmenu'>产品展示</a></li>
 
-                <li><a href="case.html" rel='dropmenu'>客户案例</a></li>
+                <li><a href="news" rel='dropmenu'>新闻动态</a></li>
 
-                <li class='home'><a href="news" rel='dropmenu'>新闻资讯</a></li>
+                <li><a href="#help" rel='dropmenu'>留言反馈</a></li>
 
-                <li><a href="help.html" rel='dropmenu'>帮助中心</a></li>
-
-                <li><a href="solution.html" rel='dropmenu'>解决方案</a></li>
-
-                <li><a href="contact.html" rel='dropmenu'>联系我们</a></li>
+                <li><a href="#contact" rel='dropmenu'>联系我们</a></li>
 
             </ul>
         </div>
@@ -59,7 +55,9 @@
         </div>
         <div class="liebiao">
             <ul>
-                <li><a href="n-detail.html" title="抓好网络舆论管理，大势所趋">抓好网络舆论管理，大势所趋</a><span>2015-12-16</span></li>
+                {% for ti in titles %}
+                <li><a href="n-detail" title="{{ ti }}">{{ ti }}</a><span>2015-12-16</span></li>
+                {% endfor %}
             </ul>
             <div class="clear"></div>
 

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request, url_for
+from src.data import article_list
 
 app = Flask(__name__)
 
@@ -14,7 +15,12 @@ def home():
 
 @app.route('/news')
 def news():
-    return render_template('news.html')
+    title_list = [ art['title'] for art in article_list]
+    return render_template('news.html', titles=title_list)
+
+@app.route('/n-detail')
+def detail():
+    return render_template('n-detail.html')
 
 
 if __name__ == '__main__':
