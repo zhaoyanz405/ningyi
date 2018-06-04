@@ -6,7 +6,7 @@ from src.data import article_list
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/',  methods=['GET', 'POST'])
 @app.route('/index')
 @app.route('/home')
 def home():
