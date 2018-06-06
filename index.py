@@ -1,6 +1,16 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template
+import sys
+
+try:
+    reload(sys)
+except:
+    import imp
+
+    imp.reload(sys)
+
+sys.setdefaultencoding('utf-8')
 
 app = Flask(__name__)
 
@@ -101,8 +111,8 @@ article3 = {
 　　相比之下，狭义生态板的基材，多层实木或细木工板的性能要优秀的多，国内目前有不少厂家生产的生态板质量都不错。多层实木基材首先看厚度和层次感，好的基材厚度均匀，层次感好，无空洞，重叠现象，表面平整光滑，无鼓包。细木工板也要看厚度，然后是内部木块的质量，好的细木工板基材木块均匀，无树皮、无弧边、无大的空洞，表面平整光滑无鼓包。因为生态板对基材表面平整度要求比较高，因此实木多层的整体效果要略高于细木工板，在使用中个人可以根据需求选择。""",
 }
 
-
 article_list = [article1, article2, article3]
+
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -119,7 +129,6 @@ def news():
 
 @app.route('/n-detail/<name>')
 def detail(name):
-    title_list = [art['title'] for art in article_list]
     for art in article_list:
         wrong_art = {
             'title': "没有这篇文章"
