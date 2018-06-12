@@ -59,9 +59,9 @@
         <div class="content">
             <p>
             <div style="padding: 0px; margin: 0px auto; color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 14px; line-height: 24px;">
-                <pre>
-                    {{ article.content }}
-                </pre>
+                {% for c in contents %}
+                <p>{{ c }}</p>
+                {% endfor %}
             </div>
             </p>
         </div>
