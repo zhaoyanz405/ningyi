@@ -303,17 +303,17 @@ a, li, span, p {
 #banner {
 	width: 100%;
 	float: left;
-	height: 480px;
+	height: 780px;
 	position: relative
 }
 .ulBanner {
 	width: 100%;
-	height: 480px
+	height: 780px;
 }
 .ulBanner li {
 	position: absolute;
 	width: 100%;
-	height: 480px
+	height: 780px;
 }
 .ulBannerNav {
 	position: absolute;
